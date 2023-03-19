@@ -33,8 +33,9 @@ public class Pizza {
         cheesePrice = 80;
         paperBagPrice = 20;
 
+        totalPrice = baseprice;
         bill = "Base Price Of The Pizza: "+baseprice+"\n";
-        totalPrice += baseprice;
+
 
     }
 
@@ -86,7 +87,7 @@ public class Pizza {
             {
                 bill+= "Paperbag Added: "+paperBagPrice+"\n";
             }
-            bill += "Total Price: "+totalPrice;
+            bill += "Total Price: "+totalPrice+"\n";
             isBillGenerated = true;
         }
 
